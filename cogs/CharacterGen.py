@@ -76,6 +76,7 @@ class CharacterGen():
         return chosen_class
     
     def stats(self):
+        self._stats.clear()
         for i in range(6):
             rolls = []
             for j in range(4):

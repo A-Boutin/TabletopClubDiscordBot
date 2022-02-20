@@ -10,7 +10,7 @@ class NameGen():
         print("NameGen: Loaded")
     
     def line_appender(self, file_path, target):
-        file = open(file_path, "r")
+        file = open(file_path, "r", encoding = "ISO-8859-1")
         splitfile = file.read().splitlines()
         for line in splitfile:
             target.append(line)
